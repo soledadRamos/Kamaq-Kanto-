@@ -544,6 +544,42 @@
     filter: saturate(1.05);
   }
 
+  /* ── VIDEO ── */
+  .video-section {
+    background: var(--arena);
+    padding: 80px 40px;
+    text-align: center;
+  }
+  .video-section .section-eyebrow {
+    color: var(--oro);
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .video-section .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    color: var(--tierra);
+    margin-bottom: 40px;
+    line-height: 1.2;
+  }
+  .video-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .video-wrapper iframe {
+    width: 315px;
+    height: 560px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 12px 48px rgba(122,74,40,0.25);
+  }
+  @media (max-width: 400px) {
+    .video-wrapper iframe { width: 280px; height: 498px; }
+  }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 720px) {
     .servicio { grid-template-columns: 1fr; }
@@ -616,6 +652,20 @@
   <h2 class="section-title">Elige tu experiencia andina</h2>
   <p>Cada servicio es independiente. El visitante compone su propia jornada cultural según sus intereses, tiempo y espíritu.</p>
 </div>
+
+<!-- ── VIDEO ── -->
+<section class="video-section">
+  <div class="section-eyebrow">Vívelo</div>
+  <h2 class="section-title">Kamaq Kanto<br>en acción</h2>
+  <div class="video-wrapper">
+    <iframe
+      src="https://www.youtube.com/embed/K_T3Z2RjWc0"
+      title="Kamaq Kanto — Experiencia Andina"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
 
 <!-- SERVICIO 1: ALPACAS -->
 <div class="servicio s1">
